@@ -1,0 +1,98 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+}
+
+.hero-image img {
+  width: 30rem;
+  height: auto;
+  max-height: 70vh;
+  object-fit: cover;
+  box-shadow: 10px 10px 15px rgba(255, 255, 255, .5);
+  z-index: 1;
+  position: relative;
+}
+
+
+.hero-heading {
+  margin-top: 0; /* diminui a distância do topo */
+  width: 50%;
+  padding: 40px 20px; /* menos espaçamento interno */
+  z-index: 1;
+}
+
+.hero-heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #bfa46f;
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .05); 
+  max-width: 700px;
+  padding: 2rem;
+}
+      
+.hero-heading h2 {
+   font-size: 1.5rem;
+   font-weight: normal;
+   color: #a4a4a4;
+   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+   background: rgba(255, 255, 255, .05);
+   max-width: 700px;
+   padding: 2rem;
+}
+    
+    
+    
+    
+@media (max-width: 767px) {
+  .hero-section {
+    display: block; /* ou flex-direction: column, se quiser manter flex em coluna */
+  }
+
+  .hero-heading {
+    margin-top: 0; /* diminui a distância do topo */
+    width: 100vw;
+    padding: 40px 20px; /* menos espaçamento interno */
+    z-index: 1;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .hero-section {
+    display: block; /* empilha os elementos */
+    text-align: center;
+  }
+
+  .hero-heading,
+  .hero-image {
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: center;
+  }
+
+
+  .hero-image img {
+    max-width: 100%;
+    height: 29rem;
+  }
+}
+
+

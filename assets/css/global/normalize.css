@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+
+/* hover de todos os links */
+
+.lin a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lin a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #f4c430; /* cor dourada */
+  transition: width 0.3s ease;
+}
+
+.lin a:hover {
+  color: #f4c430; /* muda a cor do texto ao passar o mouse */
+}
+
+.lin a:hover::after {
+  width: 100%;
+}
+
+/*                      BOOTSTRAP                 */
+
+/* Muda a cor do toggle */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+
+.botao-whatsapp {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+@import '../../global/global.css';
+
+@import '../comments/comments.css';
+@import '../navegation/navegation.css';
+@import 'partials/hero.css';
+@import 'partials/products.css';
+@import 'partials/shipping.css';
+@import 'partials/footer.css'

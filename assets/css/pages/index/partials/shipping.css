@@ -1,0 +1,87 @@
+.shipping-section {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 110vh;
+  }
+  
+  
+  .shipping-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../../images/bg/bg-products.webp) center/cover no-repeat;
+    opacity: .5;
+    z-index: -1;
+  }
+
+.delivery-title { 
+    margin-top: 7rem;
+    width: 50%;
+    padding: 80px 20px;
+    z-index: 1;
+}
+
+.delivery-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #bfa46f;
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .05); 
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.delivery-title h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #a4a4a4;
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .05);
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.shipping-image {
+  display: inline;
+  margin-top: 7rem;
+    width: 50%;
+    padding: 80px 20px;
+    z-index: 1;
+  }
+  
+  .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .shipping-image img {
+    width: 100%;
+    height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+  box-shadow: 8px 8px 12px rgba(255, 255, 255, .4);
+}
+
+.delivery-title, .shipping-image {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  
+  .shipping-image {
+    display: none;
+  }
+}
+

@@ -1,0 +1,78 @@
+.products {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 100vh; /* faz ocupar a tela toda */
+  text-align: center;
+  padding-bottom: 7rem;
+}
+
+
+.products::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/bg/bg-products2.avif) center/cover no-repeat;
+  opacity: .7;
+  z-index: -1;
+}
+
+
+.products h2 {
+  font-size: 2rem;
+  color: #bfa46f; /* tom dourado suave */
+  margin: 4rem auto 6rem auto;
+  border-bottom: 2px solid #bfa46f;
+  display: inline-block;
+  padding-bottom: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    padding: 8px 0;
+    scroll-snap-type: x mandatory;
+    background: rgba(0, 0, 0, .6);
+    scrollbar-width: none;
+  }
+  
+  .produto {
+    min-width: 150px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+  transition: all 0.3s ease;
+  transform: scale(1);
+  margin: 10px;
+  width: 200px;
+  }
+
+ 
+  .produto img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* limite máximo */
+    border-radius: 4px;
+  }
+  
+
+  .produto.hide {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    position: absolute;
+  }
+  
