@@ -31,12 +31,12 @@ body {
   bottom: -2px;
   width: 0%;
   height: 2px;
-  background-color: #f4c430; /* cor dourada */
+  background-color: #f4c430;
   transition: width 0.3s ease;
 }
 
 .lin a:hover {
-  color: #f4c430; /* muda a cor do texto ao passar o mouse */
+  color: #f4c430;
 }
 
 .lin a:hover::after {
@@ -64,4 +64,10 @@ body {
   padding: 8px;
   border: none;
   cursor: pointer;
+}
+
+
+.close {
+  font-size: large;
+  font-weight: bold;
 }

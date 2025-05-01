@@ -15,27 +15,33 @@ document.addEventListener('DOMContentLoaded', includeHTML);
 // link para o zap
 
 function comprarWhatsApp() {
-  // 558391101416
-  // 558382172222
-    const numero = '558391101416';
+    const numero = '558382172222';
     const mensagem = `Olá! Tenho interesse nos seus produtos, podemos conversar?`;
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     window.open(link, '_blank');
 }
 
 // search
-
 function search() {
-  let input = document.getElementById('searchbar').value.toLowerCase();
-  let nomes = document.getElementsByClassName('i-product');
-  let cards = document.getElementsByClassName('produto');
+  const input = document.getElementById('searchbar').value.toLowerCase();
+  const produtos = document.querySelectorAll('.produto');
 
-  for (let i = 0; i < nomes.length; i++) {
-    let texto = nomes[i].innerText.toLowerCase();
-    if (texto.includes(input)) {
-      cards[i].classList.remove("hide");
+  produtos.forEach(produto => {
+    const nomeProduto = produto.querySelector('.i-product').textContent.toLowerCase();
+    if (nomeProduto.includes(input)) {
+      produto.style.display = 'block';
     } else {
-      cards[i].classList.add("hide");
+      produto.style.display = 'none';
     }
-  }
+  });
+}
+
+function limparBusca() {
+  const input = document.getElementById("searchbar");
+  input.value = ""; 
+
+  const produtos = document.querySelectorAll(".produto");
+  produtos.forEach(produto => {
+    produto.style.display = "block"; 
+  });
 }
