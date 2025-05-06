@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 100vh; /* faz ocupar a tela toda */
+  min-height: 100vh;
   text-align: center;
   padding-bottom: 7rem;
 }
@@ -74,5 +74,30 @@
     transform: scale(0.9);
     pointer-events: none;
     position: absolute;
+  }
+  
+
+  .produtos-h1 {
+    margin-top: 3%;
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .produtos-h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #d4af37; /* dourado */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .produtos-h1:hover::after {
+    width: 100%;
   }
   

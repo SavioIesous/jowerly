@@ -1,51 +1,5 @@
 <section class="secao-1" id="secao-1">
-    <header>
-        <nav class="navbar navbar-expand-lg navLista">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"> <img class="logo-img" src="assets/images/bg/logo-charmesBijus.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                  <li class="nav-item lin">
-                    <a class="nav-link active text-light" aria-current="page" href="#secao-1">INÍCIO</a>
-                  </li>
-
-                  <li class="nav-item lin">
-                    <a class="nav-link active text-light" aria-current="page" href="#secao-2">SOBRE</a>
-                  </li>
-
-                  <li class="nav-item lin">
-                    <a class="nav-link active text-light" aria-current="page" href="#products">PRODUTO</a>
-                  </li>
-
-                  <li class="nav-item dropdown lin">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      CONTATOS
-                    </a>
-
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item text-dark zap" onclick="comprarWhatsApp()">WHATSAPP</a></li>
-                      <li><a class="dropdown-item text-dark insta" href="https://www.instagram.com/charmebijuss?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">INSTAGRAM</a></li>
-                      <li><a class="dropdown-item text-dark face" href="facebook.com">FACEBOOK</a></li>
-                      <li><hr class="dropdown-divider text-dark"></li>
-                      <li><a class="dropdown-item text-dark text-center close" href="#">X</a></li>
-                    </ul>
-
-                  </li>
-                </ul>
-
-                <form id="form-search" class="d-flex" role="search">
-                  <input id="searchbar" onkeyup="search()" class="form-control me-2" type="search" placeholder="PESQUISAR" aria-label="Search">
-                  <button class="btn btn-outline text-light" type="reset" onclick="limparBusca()">LIMPAR</button>
-                </form>             
-              </div>
-            </div>
-          </nav>
-  </header>
+    <div include-html="navbar.html"></div>
 
     
 

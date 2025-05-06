@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: black!important;
+}
+
+.titulo {
+  font-size: 32px;
+  margin: 7% 0 10px 0;
+  color: #a67c00;
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 700px!important;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel img {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.carousel img.active {
+  display: block;
+  cursor: pointer;
+}
+
+.soso {
+  display: flex;
+  justify-content: center;
+}

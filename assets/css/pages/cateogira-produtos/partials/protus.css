@@ -1,0 +1,152 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+}
+
+
+.all-products {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 110vh;
+}
+
+
+.all-products::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../../images/bg/bg-section-2.webp) center/cover no-repeat;
+  opacity: .3;
+  z-index: -1;
+}
+
+.products-space {
+  margin: 12vh 2vw;
+}
+
+
+h2 {
+  margin-top: 40px;
+  font-size: 24px;
+  border-left: 4px solid #a67c52;
+  padding-left: 12px;
+  color: #a67c52;
+}
+
+.scroll-section {
+  overflow-x: auto;
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 180px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  scroll-snap-align: start;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-content {
+  padding: 12px;
+  text-align: center;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+
+.price {
+  color: #a67c52;
+  font-size: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #a67c52;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.modal p {
+  margin: 12px 0;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #999;
+}
+
+p#modal-desc {
+  color: black;
+}

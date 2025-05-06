@@ -1,0 +1,47 @@
+.logo-img {
+    width: 55px;
+}
+
+.navLista {
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: ▯rgba(0, 0, 0, 0.2); /* Opacidade corrigida */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+
+.container-fluid {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.link-categoria {
+  text-decoration: none;
+  color: #bfa46f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.link-categoria::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #d4af37; /* dourado suave */
+  transition: width 0.3s ease;
+}
+
+.link-categoria:hover {
+  color: #d4af37; /* muda a cor do texto */
+}
+
+.link-categoria:hover::after {
+  width: 100%; /* animação da linha dourada */
+}
