@@ -16,6 +16,149 @@ const produtos = [
         {
           nome: "Brinco Ouro",
           preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
+          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagensExtras: [
+            "../assets/images/produtos/brincos/brinco1.png",
+            "../assets/images/produtos/brincos/brinco2.png",
+            "../assets/images/produtos/brincos/brinco3.png"
+          ],
+          descricao: "Brinco de ouro 18k com design moderno e elegante."
+        },
+        {
+          nome: "Brinco Ouro",
+          preco: "R$ 299",
           imagem: "../assets/images/produtos/brincos/brinco5.png",
           imagensExtras: [
             "../assets/images/produtos/brincos/brinco1.png",
