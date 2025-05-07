@@ -187,7 +187,7 @@ gallery.innerHTML = "";
 });
 
 const msg = encodeURIComponent(`Olá! Tenho interesse no produto "${item.nome}". Ainda está disponível?`);
-document.getElementById("whatsapp-button").href = `https://wa.me/558391101416?text=${msg}`;
+document.getElementById("whatsapp-button").href = `https://wa.me/558382172222?text=${msg}`;
 
 document.getElementById("product-modal").classList.add("active");
 }
@@ -196,7 +196,14 @@ document.getElementById("product-modal").classList.add("active");
     document.getElementById("product-modal").classList.remove("active");
   }
 
+  //fechar ao clicar na tela
+  document.getElementById("product-modal").addEventListener("click", function (e) {
+    if (e.target === this) {
+      closeModal();
+    }
+  });
 
+  
 // Search
 function search() {
   const input = document.getElementById('searchbar').value.toLowerCase();
@@ -221,10 +228,3 @@ function limparBusca() {
     produto.style.display = "block"; 
   });
 }
-
-//fechar ao clicar na tela
-document.getElementById("product-modal").addEventListener("click", function (e) {
-  if (e.target === this) {
-    closeModal();
-  }
-});

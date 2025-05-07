@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charme biju's</title>
+    <title>Início | Charme Bijus</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/pages/index/index.css">
-    <link rel="shortcut icon" href="assets/images/bg/logo-charmesBijus.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/pages/index/index.css">
+    <link rel="stylesheet" href="/assets/css/pages/Pprodutos/Pprodutos.css">
+
+    <link rel="shortcut icon" href="/assets/images/bg/logo-charmesBijus.png" type="image/x-icon">
 </head>
 <body>
       
@@ -15,11 +17,37 @@
     <div include-html="navegation.html"></div>
     <div include-html="navbar.html"></div>
     <div include-html="secao-2.html"></div>
-    <div include-html="products.html"></div>
+    <div include-html="Pprodutos.html"></div>
     <div include-html="footer.html"></div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/include.js"></script>
     
-    <script src="assets/js/include.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script>
+      includeHTML(() => {
+        // Inicia carrosséis depois dos includes
+        const carousels = document.querySelectorAll('.carousel');
+        carousels.forEach((carouselEl) => {
+          new bootstrap.Carousel(carouselEl, {
+            interval: 3000,
+            ride: 'carousel',
+            wrap: true,
+            pause: false
+          });
+        });
+    
+        // Scroll para #secao-2 se necessário
+        const hash = window.location.hash;
+        if (hash === '#secao-2') {
+          const secao = document.querySelector(hash);
+          if (secao) {
+            secao.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    </script>
+    
+    
+      
 </body>
 </html>

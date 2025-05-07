@@ -34,14 +34,14 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: #d4af37; /* dourado suave */
+  background-color: #d4af37; 
   transition: width 0.3s ease;
 }
 
 .link-categoria:hover {
-  color: #d4af37; /* muda a cor do texto */
+  color: #d4af37; 
 }
 
 .link-categoria:hover::after {
-  width: 100%; /* animação da linha dourada */
+  width: 100%; 
 }

@@ -1,14 +1,31 @@
-function includeHTML() {
+function includeHTML(callback) {
   const elements = document.querySelectorAll('[include-html]');
+  let total = elements.length;
+  let carregados = 0;
+
+  if (total === 0 && typeof callback === 'function') {
+    callback();
+    return;
+  }
+
   elements.forEach(async (el) => {
     const file = el.getAttribute('include-html');
     if (file) {
-      const res = await fetch(file);
-      const text = await res.text();
-      el.innerHTML = text;
+      try {
+        const res = await fetch(file);
+        const text = await res.text();
+        el.innerHTML = text;
 
-      // Aplica as mudanças específicas por página depois que a navbar for carregada
-      aplicarModificacoesNavbar();
+        aplicarModificacoesNavbar();
+        aplicarModificacoesFooter(); // <- Adicionado aqui
+      } catch (e) {
+        el.innerHTML = 'Erro ao carregar: ' + file;
+      }
+    }
+
+    carregados++;
+    if (carregados === total && typeof callback === 'function') {
+      callback();
     }
   });
 }
@@ -21,33 +38,85 @@ function aplicarModificacoesNavbar() {
     const formBusca = document.querySelector('#form-search');
     if (formBusca) formBusca.remove();
 
-    // Muda o link "PRODUTO" para ir para produto1.html
     const linkProduto = document.querySelector('#link-produto');
     if (linkProduto) linkProduto.setAttribute('href', 'pages/produto1.html');
   }
 
-  // Se for produto1.html, remove o link "PRODUTO"
+  // Se for produto1.html, remove o link "PRODUTO" e muda o link do "INÍCIO"
   if (path.includes('produto1.html')) {
     const linkProduto = document.querySelector('#link-produto');
     if (linkProduto) linkProduto.remove();
 
-    // Também altera o link "INÍCIO" para voltar pra index.html
     const linkInicio = document.querySelector('a[href="#secao-1"]');
     if (linkInicio) linkInicio.setAttribute('href', '/index.html');
+
+    const linkProdutoFooter = document.querySelector('a[href="pages/contatos.html"');
+    if (linkProdutoFooter) linkProdutoFooter.setAttribute('href', 'contatos.html');
+  }
+
+  // Se for contatos.html, remove o link de "Contatos" e esconde o form de busca
+  if (path.includes('contatos.html')) {
+    // Remove o item de "Contatos"
+    const itemContato = document.querySelector('.nav-item.dropdown');
+    if (itemContato) itemContato.style.display = 'none'; // Esconde o item "Contatos"
+
+    const formBusca = document.querySelector('#form-search');
+    if (formBusca) formBusca.remove();
+
+    const limparBusca = document.querySelector('#limpar-busca');
+    if (limparBusca) limparBusca.remove();
+
+     // Navbar: Ajusta os links
+     const linkInicioNavbar = document.querySelector('a[href="#secao-1"]');
+     if (linkInicioNavbar) linkInicioNavbar.setAttribute('href', '/index.html');
+ 
+     const linkSobreNavbar = document.querySelector('a[href="#secao-2"]');
+     if (linkSobreNavbar) linkSobreNavbar.setAttribute('href', '/index.html#secao-2');
+ 
+     const linkProdutoNavbar = document.querySelector('a[href="/pages/produto1.html"]');
+     if (linkProdutoNavbar) linkProdutoNavbar.setAttribute('href', '/pages/produto1.html');
+ 
+     // Footer: Ajusta os links
+     const linkInicioFooter = document.querySelector('footer a[href="#secao-1"]');
+     if (linkInicioFooter) linkInicioFooter.setAttribute('href', '/index.html');
+ 
+     const linkSobreFooter = document.querySelector('footer a[href="#secao-2"]');
+     if (linkSobreFooter) linkSobreFooter.setAttribute('href', '/index.html#secao-2');
+ 
+     const linkProdutoFooter = document.querySelector('footer a[href="/pages/produto1.html"]');
+     if (linkProdutoFooter) linkProdutoFooter.setAttribute('href', '/pages/produto1.html');
   }
 }
 
-
-
-document.addEventListener('DOMContentLoaded', includeHTML);
+document.addEventListener('DOMContentLoaded', aplicarModificacoesNavbar);
 
 
 
-// link para o zap
+function aplicarModificacoesFooter() {
+  const path = window.location.pathname;
 
+  if (path.includes('produto1.html')) {
+    const links = document.querySelectorAll('footer a');
+    links.forEach(link => {
+      if (link.textContent.trim().toLowerCase() === 'sobre nós') {
+        link.setAttribute('href', '/index.html#secao-2');
+      }
+    });
+  }
+}
+
+// Garante que as modificações sejam aplicadas também após o carregamento geral
+document.addEventListener('DOMContentLoaded', () => {
+  includeHTML(() => {
+    aplicarModificacoesNavbar();
+    aplicarModificacoesFooter();
+  });
+});
+
+// Função do WhatsApp
 function comprarWhatsApp() {
-    const numero = '558382172222';
-    const mensagem = `Olá! Tenho interesse nos seus produtos, podemos conversar?`;
-    const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-    window.open(link, '_blank');
+  const numero = '558382172222';
+  const mensagem = `Olá! Tenho interesse nos seus produtos, podemos conversar?`;
+  const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, '_blank');
 }
