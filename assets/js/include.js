@@ -39,11 +39,11 @@ function aplicarModificacoesNavbar() {
     if (formBusca) formBusca.remove();
 
     const linkProduto = document.querySelector('#link-produto');
-    if (linkProduto) linkProduto.setAttribute('href', 'pages/produto1.html');
+    if (linkProduto) linkProduto.setAttribute('href', 'pages/produtos.html');
   }
 
-  // Se for produto1.html, remove o link "PRODUTO" e muda o link do "INÍCIO"
-  if (path.includes('produto1.html')) {
+  // Se for produtos.html, remove o link "PRODUTO" e muda o link do "INÍCIO"
+  if (path.includes('produtos.html')) {
     const linkProduto = document.querySelector('#link-produto');
     if (linkProduto) linkProduto.remove();
 
@@ -73,8 +73,8 @@ function aplicarModificacoesNavbar() {
      const linkSobreNavbar = document.querySelector('a[href="#secao-2"]');
      if (linkSobreNavbar) linkSobreNavbar.setAttribute('href', '/index.html#secao-2');
  
-     const linkProdutoNavbar = document.querySelector('a[href="/pages/produto1.html"]');
-     if (linkProdutoNavbar) linkProdutoNavbar.setAttribute('href', '/pages/produto1.html');
+     const linkProdutoNavbar = document.querySelector('a[href="/pages/produtos.html"]');
+     if (linkProdutoNavbar) linkProdutoNavbar.setAttribute('href', '/pages/produtos.html');
  
      // Footer: Ajusta os links
      const linkInicioFooter = document.querySelector('footer a[href="#secao-1"]');
@@ -83,8 +83,8 @@ function aplicarModificacoesNavbar() {
      const linkSobreFooter = document.querySelector('footer a[href="#secao-2"]');
      if (linkSobreFooter) linkSobreFooter.setAttribute('href', '/index.html#secao-2');
  
-     const linkProdutoFooter = document.querySelector('footer a[href="/pages/produto1.html"]');
-     if (linkProdutoFooter) linkProdutoFooter.setAttribute('href', '/pages/produto1.html');
+     const linkProdutoFooter = document.querySelector('footer a[href="/pages/produtos.html"]');
+     if (linkProdutoFooter) linkProdutoFooter.setAttribute('href', '/pages/produtos.html');
   }
 }
 
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', aplicarModificacoesNavbar);
 function aplicarModificacoesFooter() {
   const path = window.location.pathname;
 
-  if (path.includes('produto1.html')) {
+  if (path.includes('produtos.html')) {
     const links = document.querySelectorAll('footer a');
     links.forEach(link => {
       if (link.textContent.trim().toLowerCase() === 'sobre nós') {

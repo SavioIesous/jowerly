@@ -24,6 +24,10 @@
     .zap, .insta, .face, a {
         color: rgb(13, 13, 13);
     }
+
+    .email-section h2{
+      margin-top: 5vh;
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
@@ -61,13 +65,75 @@
         <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" class="w-8 h-8 mr-4">
         <span class="text-lg font-medium">@charmebijuss</span>
       </a>
+
+      <!-- E-MAIL -->
+      <section class="mt-8 email-section">
+        <h2 class="text-xl font-bold mb-4 text-yellow-800">Ou envie-nos um e-mail direto:</h2>
+        <form id="form-contato" action="https://formsubmit.co/iesoussavio009@gmail.com" method="POST" class="bg-yellow-50 p-4 rounded-lg shadow space-y-4">
+          
+          <!-- Campo Nome -->
+          <input type="text" name="name" placeholder="Seu nome" required 
+            class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      
+          <!-- Campo Email -->
+          <input type="email" name="email" placeholder="Seu e-mail" required 
+            class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      
+          <!-- Campo Mensagem -->
+          <textarea name="message" rows="4" placeholder="Sua mensagem" required 
+            class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+      
+          <!-- Botão Enviar -->
+          <input type="hidden" name="_captcha" value="false"> 
+          <button type="submit" 
+            class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600 transition">
+            Enviar
+          </button>
+      
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contatos.html">
+        </form>
+      
+         <!-- Mensagem de Sucesso -->
+         <p id="mensagem-sucesso" class="mt-4 text-green-600 font-semibold hidden">
+          ✅ Sua mensagem foi enviada com sucesso!
+        </p>
+      
+      </section>
+       
+      
+      
     </div>
   </main>
-
+  
+  
+  
   <div include-html="/footer.html"></div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/include.js"></script>
+
+  <script>
+    const form = document.getElementById('form-contato');
+    const sucesso = document.getElementById('mensagem-sucesso');
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // impede o redirecionamento
+      const data = new FormData(form);
+      
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+      }).then(() => {
+        sucesso.classList.remove('hidden');
+        form.reset(); // limpa o formulário
+      }).catch(() => {
+        sucesso.textContent = "❌ Ocorreu um erro ao enviar. Tente novamente.";
+        sucesso.classList.remove('hidden');
+        sucesso.classList.replace('text-green-600', 'text-red-600');
+      });
+    });
+  </script>
+  
 </body>
 </html>

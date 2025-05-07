@@ -5,187 +5,33 @@ const produtos = [
         {
           nome: "Brinco Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagem: "/Pprodutos/brincos/brinco4.png",
           imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
+            "/Pprodutos/brincos/brinco1.png",
+            "/Pprodutos/brincos/brinco2.png",
+            "/Pprodutos/brincos/brinco3.png"
           ],
           descricao: "Brinco de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Brinco Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagem: "/Pprodutos/brincos/brinco4.png",
           imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
+            "/Pprodutos/brincos/brinco1.png",
+            "/Pprodutos/brincos/brinco2.png",
+            "/Pprodutos/brincos/brinco3.png"
           ],
           descricao: "Brinco de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Brinco Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
+          imagem: "/Pprodutos/brincos/brinco7.png",
           imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco4.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco5.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco6.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
-          ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "../assets/images/produtos/brincos/brinco7.png",
-          imagensExtras: [
-            "../assets/images/produtos/brincos/brinco1.png",
-            "../assets/images/produtos/brincos/brinco2.png",
-            "../assets/images/produtos/brincos/brinco3.png"
+            "/Pprodutos/brincos/brinco1.png",
+            "/Pprodutos/brincos/brinco2.png",
+            "/Pprodutos/brincos/brinco3.png"
           ],
           descricao: "Brinco de ouro 18k com design moderno e elegante."
         },
@@ -197,44 +43,44 @@ const produtos = [
         {
           nome: "Colar de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/colar/colar4.png",
+          imagem: "/Pprodutos/colar/colar4.png",
           imagensExtras: [
-            "../assets/images/produtos/colar/colar1.png",
-            "../assets/images/produtos/colar/colar2.png",
-            "../assets/images/produtos/colar/colar3.png"
+            "/Pprodutos/colar/colar1.png",
+            "/Pprodutos/colar/colar2.png",
+            "/Pprodutos/colar/colar3.png"
           ],
           descricao: "colar de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Colar de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/colar/colar5.png",
+          imagem: "/Pprodutos/colar/colar5.png",
           imagensExtras: [
-            "../assets/images/produtos/colar/colar1.png",
-            "../assets/images/produtos/colar/colar2.png",
-            "../assets/images/produtos/colar/colar3.png"
+            "/Pprodutos/colar/colar1.png",
+            "/Pprodutos/colar/colar2.png",
+            "/Pprodutos/colar/colar3.png"
           ],
           descricao: "colar de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Colar de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/colar/colar6.png",
+          imagem: "/Pprodutos/colar/colar6.png",
           imagensExtras: [
-            "../assets/images/produtos/colar/colar1.png",
-            "../assets/images/produtos/colar/colar2.png",
-            "../assets/images/produtos/colar/colar3.png"
+            "/Pprodutos/colar/colar1.png",
+            "/Pprodutos/colar/colar2.png",
+            "/Pprodutos/colar/colar3.png"
           ],
           descricao: "colar de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Colar de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/colar/colar7.png",
+          imagem: "/Pprodutos/colar/colar7.png",
           imagensExtras: [
-            "../assets/images/produtos/colar/colar1.png",
-            "../assets/images/produtos/colar/colar2.png",
-            "../assets/images/produtos/colar/colar3.png"
+            "/Pprodutos/colar/colar1.png",
+            "/Pprodutos/colar/colar2.png",
+            "/Pprodutos/colar/colar3.png"
           ],
           descricao: "colar de ouro 18k com design moderno e elegante."
         },
@@ -246,44 +92,44 @@ const produtos = [
         {
           nome: "Anel de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/anel/anel4.png",
+          imagem: "/Pprodutos/anel/anel4.png",
           imagensExtras: [
-            "../assets/images/produtos/anel/anel1.png",
-            "../assets/images/produtos/anel/anel2.png",
-            "../assets/images/produtos/anel/anel3.png"
+            "/Pprodutos/anel/anel1.png",
+            "/Pprodutos/anel/anel2.png",
+            "/Pprodutos/anel/anel3.png"
           ],
           descricao: "anel de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Anel de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/anel/anel5.png",
+          imagem: "/Pprodutos/anel/anel5.png",
           imagensExtras: [
-            "../assets/images/produtos/anel/anel1.png",
-            "../assets/images/produtos/anel/anel2.png",
-            "../assets/images/produtos/anel/anel3.png"
+            "/Pprodutos/anel/anel1.png",
+            "/Pprodutos/anel/anel2.png",
+            "/Pprodutos/anel/anel3.png"
           ],
           descricao: "Anel de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Anel de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/anel/anel6.png",
+          imagem: "/Pprodutos/anel/anel6.png",
           imagensExtras: [
-            "../assets/images/produtos/anel/anel1.png",
-            "../assets/images/produtos/anel/anel2.png",
-            "../assets/images/produtos/anel/anel3.png"
+            "/Pprodutos/anel/anel1.png",
+            "/Pprodutos/anel/anel2.png",
+            "/Pprodutos/anel/anel3.png"
           ],
           descricao: "Anel de ouro 18k com design moderno e elegante."
         },
         {
           nome: "Anel de Ouro",
           preco: "R$ 299",
-          imagem: "../assets/images/produtos/anel/anel7.png",
+          imagem: "/Pprodutos/anel/anel7.png",
           imagensExtras: [
-            "../assets/images/produtos/anel/anel1.png",
-            "../assets/images/produtos/anel/anel2.png",
-            "../assets/images/produtos/anel/anel3.png"
+            "/Pprodutos/anel/anel1.png",
+            "/Pprodutos/anel/anel2.png",
+            "/Pprodutos/anel/anel3.png"
           ],
           descricao: "Anel de ouro 18k com design moderno e elegante."
         },
