@@ -89,8 +89,17 @@
             class="bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600 transition">
             Enviar
           </button>
-      
-          <input type="hidden" name="_next" value="http://charme-bijus.vercel.app/pages/contatos.html">
+
+          <!-- carregando... -->
+          <div id="mensagem-carregando" class="mt-4 flex items-center space-x-2 text-yellow-600 font-semibold hidden">
+            <svg class="animate-spin h-5 w-5 text-yellow-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+            </svg>
+            <span>Enviando mensagem...</span>
+          </div>
+
+          <input type="hidden" name="_next" value="https://charme-bijus.vercel.app/pages/contatos.html">
         </form>
       
          <!-- Mensagem de Sucesso -->
@@ -115,24 +124,33 @@
 
   <script>
     const form = document.getElementById('form-contato');
-    const sucesso = document.getElementById('mensagem-sucesso');
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); // impede o redirecionamento
-      const data = new FormData(form);
-      
-      fetch(form.action, {
-        method: "POST",
-        body: data,
-      }).then(() => {
-        sucesso.classList.remove('hidden');
-        form.reset(); // limpa o formulário
-      }).catch(() => {
-        sucesso.textContent = "❌ Ocorreu um erro ao enviar. Tente novamente.";
-        sucesso.classList.remove('hidden');
-        sucesso.classList.replace('text-green-600', 'text-red-600');
-      });
-    });
+const sucesso = document.getElementById('mensagem-sucesso');
+const carregando = document.getElementById('mensagem-carregando');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault(); // impede o redirecionamento
+  const data = new FormData(form);
+
+  // Mostra "carregando", oculta mensagem de sucesso anterior
+  carregando.classList.remove('hidden');
+  sucesso.classList.add('hidden');
+
+  fetch(form.action, {
+    method: "POST",
+    body: data,
+  }).then(() => {
+    carregando.classList.add('hidden');
+    sucesso.textContent = "✅ Sua mensagem foi enviada com sucesso!";
+    sucesso.classList.remove('hidden');
+    sucesso.classList.replace('text-red-600', 'text-green-600');
+    form.reset(); // limpa o formulário
+  }).catch(() => {
+    carregando.classList.add('hidden');
+    sucesso.textContent = "❌ Ocorreu um erro ao enviar. Tente novamente.";
+    sucesso.classList.remove('hidden');
+    sucesso.classList.replace('text-green-600', 'text-red-600');
+  });
+});
   </script>
   
 </body>
