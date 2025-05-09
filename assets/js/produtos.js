@@ -102,10 +102,67 @@ const produtos = [
             "/Pprodutos/Maes2025/produto7-item7-maes2025.jpg",
             "/Pprodutos/Maes2025/produto8-item7-maes2025.jpg",
           ],
-          descricao: "COLAR + PINGENTES FILHOS💕💙"
+          descricao: "COLAR + PINGENTES FILHOS💕💙",
+        },
+        {
+          nome: "Mãe de MENINA🎀",
+          preco: "ANEL VERNIZ ITALIANO R$ 28,90 / PULSEI V. ITALIANO R$49,90 / COLCAR + PINGENTE R$ 43,00",
+          imagem: "/Pprodutos/Maes2025/produto1-item8-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item8-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item8-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item8-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item8-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item8-maes2025.jpg",
+          ],
+          descricao: "Mãe de MENINA🎀",
+        },
+        {
+          nome: "Pingente Filhos Semijóias✨",
+          preco: "COLARES APARTIR DE R$ 20,00!",
+          imagem:  "/Pprodutos/Maes2025/produto1-item9-maes2025.jpg",
+          imagensExtras: [
+             "/Pprodutos/Maes2025/produto1-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto2-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto3-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto4-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto5-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto6-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto7-item9-maes2025.jpg",
+             "/Pprodutos/Maes2025/produto8-item9-maes2025.jpg",
+          ],
+          descricao: "Pingente Filhos Semijóias✨"
+        },
+        {
+          nome: "Mãe de MENINO💙",
+          preco: "COLAR + PINGENTE R$ 43,00 / PULSEI V. ITALIANO R$49,90 / ANEL V. ITALIANO R$ 28,90",
+          imagem: "/Pprodutos/Maes2025/produto1-item10-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item10-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item10-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item10-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item10-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item10-maes2025.jpg",
+          ]
+        },
+        {
+          nome: "Chaveiro Personalizados🎁",
+          preco: "CHAVEIRO RELICÁRIO R$ 42,90 / CHAVEIRO V. ITALIANO 39,90 ",
+          imagem: "/Pprodutos/Maes2025/produto1-item11-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item11-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item11-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item11-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item11-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item11-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item11-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto7-item11-maes2025.jpg",
+
+          ],
+          descricao: "Chaveiro Personalizados🎁"
         }
 
-      ]
+      ],
     },
     {
       tipo: "Conjuntos Folheados/semijóias",
@@ -124,7 +181,7 @@ const produtos = [
             "/Pprodutos/Con-Folhe-Semi/produto7-item1.jpg",
             "/Pprodutos/Con-Folhe-Semi/produto8-item1.jpg",
           ],
-          descricao: "CONJUNTOS SEMIJÓIAS✨"
+          descricao: "CONJUNTOS SEMIJÓIAS✨",
         }
       ]
     }
