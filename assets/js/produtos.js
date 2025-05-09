@@ -1,140 +1,133 @@
 const produtos = [
-  {
-      tipo: "Brincos",
+     {
+      tipo: "Especial Dia Das Mães 2025💕",
       itens: [
         {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/brincos/brinco4.png",
+          nome: "COLAR PERSONALIZADO💕",
+          preco: "COLARES PERSONALIZADOS DE R$ 68,00!",
+          imagem: "/Pprodutos/Maes2025/produto1-dia-das-maes2025.jpg",
           imagensExtras: [
-            "/Pprodutos/brincos/brinco1.png",
-            "/Pprodutos/brincos/brinco2.png",
-            "/Pprodutos/brincos/brinco3.png"
+            "/Pprodutos/Maes2025/produto2-dia-das-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-dia-das-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-dia-das-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-dia-das-maes2025.jpg"
           ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
+          descricao: "O COLAR PODE SER PERSONALIZADO COM ATÉ 05 PINGENTES, O VALOR FINAL DEPENDE DA QUANTIDADE ESCOLHIDA"
         },
         {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/brincos/brinco4.png",
+          nome: "Colar + Pingente Filhos💕💙",
+          preco: "R$ 59,00 COLAR + PINGENTE / R$ 34,00 PINGENTE SEMIJÓIA / R$ 25,00 CORRENTE SEMIJÓIA",
+          imagem: "/Pprodutos/Maes2025/produto1-item2-maes2025.jpg",
           imagensExtras: [
-            "/Pprodutos/brincos/brinco1.png",
-            "/Pprodutos/brincos/brinco2.png",
-            "/Pprodutos/brincos/brinco3.png"
+            "/Pprodutos/Maes2025/produto1-item2-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item2-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item2-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item2-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item2-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item2-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto7-item2-maes2025.jpg",
           ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
+          descricao: "Corrente Veneziana Semijóia 25,00 Pingente Semijóia com cristais."
         },
         {
-          nome: "Brinco Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/brincos/brinco7.png",
+          nome: "Relicários✨",
+          preco: "...",
+          imagem: "/Pprodutos/Maes2025/produto1-item3-maes2025.jpg",
           imagensExtras: [
-            "/Pprodutos/brincos/brinco1.png",
-            "/Pprodutos/brincos/brinco2.png",
-            "/Pprodutos/brincos/brinco3.png"
+            "/Pprodutos/Maes2025/produto1-item3-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item3-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item3-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item3-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item3-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item3-maes2025.jpg",
           ],
-          descricao: "Brinco de ouro 18k com design moderno e elegante."
+          descricao: "Relicários✨"
         },
+        {
+          nome: "Choker Personalizada✨",
+          preco: "R$ 56,00 CORRENTE + PINGENTES / R$ 40,00 CORRENTE + LETRA /  R$ 32,00 CORRENTE",
+          imagem: "/Pprodutos/Maes2025/produto1-item4-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item4-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item4-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item4-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item4-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item4-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item4-maes2025.jpg",
+          ],
+          descricao: "Choker Personalizado✨"
+        },
+        {
+          nome: "Relicários Verniz Italiano✨",
+          preco: "R$ 68,90 RELICÁRIO / R$ 18,00 CORRENTE",
+          imagem: "/Pprodutos/Maes2025/produto1-item5-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto7-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto8-item5-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto9-item5-maes2025.jpg",
+          ],
+          descricao: "TODOS OS RELICÁRIOS JÁ ACOMPANHAM FOTOS DE SUA ESCOLHA. PRAZO DE NO MÍNIMO 24 HORAS PARA ENTREGA."
+        },
+        {
+          nome: "Colar e Pingentes Filhos🌹",
+          preco: "COLARES SEMIJÓIAS APARTIR R$ 28,90!",
+          imagem: "/Pprodutos/Maes2025/produto1-item6-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item6-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item6-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item6-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item6-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item6-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item6-maes2025.jpg"
+          ],
+          descricao: "Colar e Pingentes Filhos🌹"
+        },
+        {
+          nome: "COLAR + PINGENTES FILHOS💕💙",
+          preco: "COLAR FOLHEADO-PRATA APARTIR R$ 29,90! / COLAR FOLHEADO RÓDIO R$ 39,90!",
+          imagem: "/Pprodutos/Maes2025/produto1-item7-maes2025.jpg",
+          imagensExtras: [
+            "/Pprodutos/Maes2025/produto1-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto2-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto3-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto4-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto5-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto6-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto7-item7-maes2025.jpg",
+            "/Pprodutos/Maes2025/produto8-item7-maes2025.jpg",
+          ],
+          descricao: "COLAR + PINGENTES FILHOS💕💙"
+        }
+
       ]
-    },    
-  {
-      tipo: "Colares",
+    },
+    {
+      tipo: "Conjuntos Folheados/semijóias",
       itens: [
         {
-          nome: "Colar de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/colar/colar4.png",
+          nome: "CONJUNTOS SEMIJÓIAS✨",
+          preco: "CONJUNTO SEMIJÓIA APARTIR R$ 38,90!",
+          imagem: "/Pprodutos/Con-Folhe-Semi/produto1-item1.jpg",
           imagensExtras: [
-            "/Pprodutos/colar/colar1.png",
-            "/Pprodutos/colar/colar2.png",
-            "/Pprodutos/colar/colar3.png"
+            "/Pprodutos/Con-Folhe-Semi/produto1-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto2-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto3-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto4-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto5-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto6-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto7-item1.jpg",
+            "/Pprodutos/Con-Folhe-Semi/produto8-item1.jpg",
           ],
-          descricao: "colar de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Colar de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/colar/colar5.png",
-          imagensExtras: [
-            "/Pprodutos/colar/colar1.png",
-            "/Pprodutos/colar/colar2.png",
-            "/Pprodutos/colar/colar3.png"
-          ],
-          descricao: "colar de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Colar de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/colar/colar6.png",
-          imagensExtras: [
-            "/Pprodutos/colar/colar1.png",
-            "/Pprodutos/colar/colar2.png",
-            "/Pprodutos/colar/colar3.png"
-          ],
-          descricao: "colar de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Colar de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/colar/colar7.png",
-          imagensExtras: [
-            "/Pprodutos/colar/colar1.png",
-            "/Pprodutos/colar/colar2.png",
-            "/Pprodutos/colar/colar3.png"
-          ],
-          descricao: "colar de ouro 18k com design moderno e elegante."
-        },
+          descricao: "CONJUNTOS SEMIJÓIAS✨"
+        }
       ]
-    },    
-  {
-      tipo: "Anéis",
-      itens: [
-        {
-          nome: "Anel de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/anel/anel4.png",
-          imagensExtras: [
-            "/Pprodutos/anel/anel1.png",
-            "/Pprodutos/anel/anel2.png",
-            "/Pprodutos/anel/anel3.png"
-          ],
-          descricao: "anel de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Anel de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/anel/anel5.png",
-          imagensExtras: [
-            "/Pprodutos/anel/anel1.png",
-            "/Pprodutos/anel/anel2.png",
-            "/Pprodutos/anel/anel3.png"
-          ],
-          descricao: "Anel de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Anel de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/anel/anel6.png",
-          imagensExtras: [
-            "/Pprodutos/anel/anel1.png",
-            "/Pprodutos/anel/anel2.png",
-            "/Pprodutos/anel/anel3.png"
-          ],
-          descricao: "Anel de ouro 18k com design moderno e elegante."
-        },
-        {
-          nome: "Anel de Ouro",
-          preco: "R$ 299",
-          imagem: "/Pprodutos/anel/anel7.png",
-          imagensExtras: [
-            "/Pprodutos/anel/anel1.png",
-            "/Pprodutos/anel/anel2.png",
-            "/Pprodutos/anel/anel3.png"
-          ],
-          descricao: "Anel de ouro 18k com design moderno e elegante."
-        },
-      ]
-    },    
+    }
 ]
   const container = document.getElementById("products-container");
 
@@ -217,3 +210,20 @@ function limparBusca() {
     produto.style.display = "block"; 
   });
 }
+
+// Clique para ampliar imagem da galeria
+document.addEventListener("click", function (e) {
+  if (e.target.closest("#modal-gallery img")) {
+    const src = e.target.src;
+    const zoomImg = document.getElementById("zoom-image");
+    zoomImg.src = src;
+    document.getElementById("zoom-modal").classList.add("active");
+  }
+});
+
+// Fechar modal ao clicar fora da imagem
+document.getElementById("zoom-modal").addEventListener("click", function (e) {
+  if (e.target === this) {
+    this.classList.remove("active");
+  }
+});

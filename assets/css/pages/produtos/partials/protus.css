@@ -65,6 +65,8 @@ h2 {
 
 .product-card img {
   width: 100%;
+  aspect-ratio: 1 / 1; /* ou 4 / 3, 3 / 4, 16 / 9 etc. */
+  object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
@@ -150,4 +152,33 @@ h2 {
 
 p#modal-desc {
   color: black;
+}
+
+
+.zoom-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.zoom-modal img {
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s;
+}
+
+.zoom-modal.active {
+  display: flex;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
